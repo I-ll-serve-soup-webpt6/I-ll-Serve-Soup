@@ -64,3 +64,5 @@
 
 - There will be a demo held on Monday evening for 1 hour (11am PST).
 - 10 projects will be demoed. These projects will be selected from volunteers.
+
+Built By Delphina Bailey Nicols and Andrew Johnson.
