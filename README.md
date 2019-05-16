@@ -66,3 +66,13 @@
 - 10 projects will be demoed. These projects will be selected from volunteers.
 
 Built By Delphina Bailey Nicols and Andrew Johnson.
+
+
+**OUTSIDE SOURCE ACCREDITATIONS**
+
+**marketingLanding.jpg**   
+Sourced from the "Spoons with Seasonings" image from the Pixabay.com photographer via pexels.com.
+Original file name: anise-aroma-art-277253.jpg.
+
+**salesLanding.jpg** Sourced from the Photographer Timur Saglambilek via pexels.com.
+Original file name: chef-dinner-food-66639.jpg
