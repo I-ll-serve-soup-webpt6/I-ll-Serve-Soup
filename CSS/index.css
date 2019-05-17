@@ -7,3 +7,7 @@ body {
   background-color: black;
   opacity: .7;
 }
+
+.card {
+  display: none
+}
