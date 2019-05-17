@@ -1,6 +1,5 @@
 body {
-    background-image: url("../assets/salesbackground.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
+  background-image: url("../assets/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
