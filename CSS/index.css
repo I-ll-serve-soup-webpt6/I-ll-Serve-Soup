@@ -145,6 +145,7 @@ footer {
   height: 9%;
 }
 .openCard {
+<<<<<<< HEAD
   background-color: black;
 <<<<<<< HEAD
   opacity: .7;
@@ -152,6 +153,10 @@ footer {
 =======
   opacity: 0.7;
 >>>>>>> 784a0df35a2ef1390f3d72657dcc4d7cc49bb8c4
+=======
+  background-color
+  opacity: 0.7
+>>>>>>> 9865a2352e2d3e66448be90db752b60ca89a683b
 }
 .card {
   display: none;
