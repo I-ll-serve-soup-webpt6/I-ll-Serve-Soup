@@ -3,6 +3,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.openCard {
+  background-color: black;
+  opacity: .7;
+}
 
 .card {
   display: none
