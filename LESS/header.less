@@ -4,19 +4,25 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    
     font-family: @fontFamily;
     margin: 0;
     padding: 0;
 
     .volunteerTab {
+        
+        height: 20px;
+        width: 300px;
         color: @headerFooterFontColor;
         font-weight: bold;
-        // border: 1px solid red;
+        //  border: 1px solid red;
         margin: auto 200px auto 100px;
         
     }
     h1 {
+        height: 30px;
+        width: 300px;
         justify-content: center;
         font-size: 2.0rem;
         margin: auto 0px auto;
@@ -28,10 +34,11 @@ header {
 
     .signInTab{
         color: @headerFooterFontColor;
-        
-        margin: auto 0px auto 300px;
+        height: 15px;
+        width: 60px;
+        margin: auto 0px auto 10%;
         padding: auto auto;
-        //  border: 1px solid red;
+        //   border: 1px solid red;
     }
     .headerBtn{
         color: @btnColor;
