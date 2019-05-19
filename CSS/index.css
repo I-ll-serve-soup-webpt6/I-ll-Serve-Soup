@@ -132,6 +132,15 @@ header h1 {
   margin: auto 0px auto;
   border: 1px solid red;
 }
+header h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.5rem;
+  horizontal-align: center;
+  width: 30%;
+  border: 1px solid red;
+}
 footer {
   background-color: #49b6e9;
   height: 40px;

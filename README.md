@@ -77,5 +77,9 @@ Original file name: anise-aroma-art-277253.jpg.
 **assets/salesbackground.jpeg** Sourced from the Photographer Timur Saglambilek via pexels.com.
 Original file name: chef-dinner-food-66639.jpg
 
+<<<<<<< HEAD
 **assets/logo.png**
 ADD THE SOURCE INFO FOR THE FORK AND SPOON LOGO
+=======
+**assets/logo.png**
+>>>>>>> c92c9483ab115997dda5af3c24737df8a957f799
