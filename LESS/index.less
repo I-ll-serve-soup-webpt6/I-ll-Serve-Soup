@@ -38,10 +38,15 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-@import './mixins.less';
-@import './variables.less';
-@import './header.less';
-@import './footer.less';
+//Remember the Cascade effect when stacking imports so some things don't get overwritten
+@import './LESS/variables.less';
+@import './LESS/salesvariables.less';
+@import './LESS/mixins.less';
+@import './LESS/salesMixins.less';
+@import './LESS/header.less';
+@import './LESS/footer.less';
+@import './LESS/index.less';
+@import './LESS/salespage.less';
 
 .container {
     display: flex;
