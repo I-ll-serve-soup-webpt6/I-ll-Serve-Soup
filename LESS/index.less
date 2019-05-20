@@ -57,7 +57,7 @@ q:before, q:after {
 }
 #marketingBackground {
     background-image: url("../assets/background.jpeg");
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     background-size: cover;
     
 }
@@ -66,25 +66,65 @@ q:before, q:after {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+// This is the logo image
 .container img {
+    // border: 1px solid red;
     width: 110px;
     height: 110px;
+    margin: 2% 55% 15% 40%;
+   
+    
 }
 .mainNav{
     width: 45%;
-    height: 45%;
+    height: 50%;
+    margin: auto auto;
+    background:@mainNavBackground;
+    border-radius: 10px;
+    border-top: 15px double black;
+    
+
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+        .tab {
+            padding-top: 8px;
+            padding-left: 30px;
+            width: 25%;
+            border: 3px solid @mainNavBackground;
+            font-weight: bold;
+            justify-content: center;
+            height: 40px;
+            background: black;
+            color: white;
+            
+        }
+        
+    }
 
 }
+<<<<<<< HEAD
 .active-tab {
     background-color: grey;
     opacity: .7;
+=======
+.tab:hover {
+    color:@tabHoverBkrd;
+    background:@tabHoverColor;
+}
+
+
+.active-tab {
+    background-color: rgba(0,0,0, 0.4);
+    color: rgb()
+}
+
+.openCard {
+    background: @mainNavBackground;
+>>>>>>> d4f861d67b68797fb39054b9fb917139da1c41d2
     border-radius: 10px;
 }
 .card {
-    display: none
-}
-.tab {
-    border: 2px solid blue;
+    display: none;
 }
 
