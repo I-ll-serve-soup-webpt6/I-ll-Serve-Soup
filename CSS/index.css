@@ -156,6 +156,10 @@ header .signInTab {
   margin: auto 0px auto 10%;
   padding: auto auto;
 }
+header .signInTab a {
+  text-decoration: none;
+  color: #9ca4ab;
+}
 header .headerBtn {
   color: #6cb043;
   height: 35px;
@@ -164,6 +168,16 @@ header .headerBtn {
   border-radius: 5px;
   margin: auto 100px auto 0px;
   border: 1px solid #6cb043;
+}
+header .headerBtnsales {
+  color: #6cb043;
+  height: 35px;
+  width: 140px;
+  background: white;
+  border-radius: 5px;
+  margin: auto 100px auto 0px;
+  border: 1px solid #6cb043;
+  visibility: hidden;
 }
 footer {
   display: flex;
@@ -205,11 +219,19 @@ footer .p2 {
   width: 45%;
   height: 45%;
 }
+<<<<<<< HEAD
+.active-tab {
+  background-color: black;
+=======
 .openCard {
   background-color: grey;
+>>>>>>> da38c6b49c772e0462b906edb02ec119f1c55211
   opacity: 0.7;
   border-radius: 10px;
 }
 .card {
   display: none;
+}
+.tab {
+  border: 2px solid blue;
 }
