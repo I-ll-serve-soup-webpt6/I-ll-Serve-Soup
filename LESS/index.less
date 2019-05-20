@@ -79,7 +79,7 @@ q:before, q:after {
     width: 45%;
     height: 50%;
     margin: auto auto;
-    background: rgba(208, 216, 217, 0.4);
+    background:@mainNavBackground;
     border-radius: 10px;
     border-top: 15px double black;
     
@@ -95,6 +95,7 @@ q:before, q:after {
             font-weight: bold;
             justify-content: center;
             height: 40px;
+            .tab:hover();
         }
         
     }
@@ -102,12 +103,12 @@ q:before, q:after {
 }
 
 .active-tab {
-    background-color: black;
+    background-color: rgba(0,0,0, 0.4);
+    color: rgb()
 }
 
 .openCard {
-    background-color: grey;
-    opacity: .7;
+    background: @mainNavBackground;
     border-radius: 10px;
 }
 .card {

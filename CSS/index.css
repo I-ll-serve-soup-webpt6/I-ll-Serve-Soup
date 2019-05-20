@@ -121,6 +121,10 @@ q:after {
 * {
   box-sizing: border-box;
 }
+.tab:hover {
+  color: #d0d8d9;
+  background-color: #000000;
+}
 header {
   background-color: white;
   height: 60px;
@@ -238,11 +242,11 @@ footer .p2 {
   height: 40px;
 }
 .active-tab {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb();
 }
 .openCard {
-  background-color: grey;
-  opacity: 0.7;
+  background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
 }
 .card {
