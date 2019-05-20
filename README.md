@@ -70,9 +70,12 @@ Built By Delphina Bailey Nicols and Andrew Johnson.
 
 **OUTSIDE SOURCE ACCREDITATIONS**
 
-**marketingLanding.png**   
+**assets/background.jpeg**   
 Sourced from the "Spoons with Seasonings" image from the Pixabay.com photographer via pexels.com.
 Original file name: anise-aroma-art-277253.jpg.
 
-**salesLanding.img** Sourced from the Photographer Timur Saglambilek via pexels.com.
+**assets/salesbackground.jpeg** Sourced from the Photographer Timur Saglambilek via pexels.com.
 Original file name: chef-dinner-food-66639.jpg
+
+**assets/logo.png**
+ADD THE SOURCE INFO FOR THE FORK AND SPOON LOGO
