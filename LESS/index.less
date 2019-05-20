@@ -15,7 +15,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -38,6 +38,9 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+* {
+    box-sizing: border-box;
+}
 //Remember the Cascade effect when stacking imports so some things don't get overwritten
 @import './variables.less';
 @import './mixins.less';
@@ -48,8 +51,7 @@ q:before, q:after {
 
 .container {
     display: flex;
-    width: 100%;
-    height: 900px;
+    height: 536px;
     padding: 0;
     margin: 0;
 }
@@ -57,6 +59,7 @@ q:before, q:after {
     background-image: url("../assets/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 #salesBackground {
     background-image: url("../assets/salesbackground.jpeg");
@@ -66,11 +69,22 @@ q:before, q:after {
 
 .container img {
     width: 110px;
-    height: 9%;
+    height: 110px;
 }
+.mainNav{
+    width: 45%;
+    height: 45%;
+
+}
+<<<<<<< HEAD
 .active-tab {
     background-color: black;
+=======
+.openCard {
+    background-color: grey;
+>>>>>>> da38c6b49c772e0462b906edb02ec119f1c55211
     opacity: .7;
+    border-radius: 10px;
 }
 .card {
     display: none
