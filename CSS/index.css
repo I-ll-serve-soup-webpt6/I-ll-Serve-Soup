@@ -121,10 +121,6 @@ q:after {
 * {
   box-sizing: border-box;
 }
-.tab:hover {
-  color: #d0d8d9;
-  background-color: #000000;
-}
 header {
   background-color: white;
   height: 60px;
@@ -207,7 +203,6 @@ footer .p2 {
 }
 #marketingBackground {
   background-image: url("../assets/background.jpeg");
-  background-repeat: no-repeat;
   background-size: cover;
 }
 #salesBackground {
@@ -236,10 +231,16 @@ footer .p2 {
   padding-top: 8px;
   padding-left: 30px;
   width: 25%;
-  border: 3px solid black;
+  border: 3px solid rgba(208, 216, 217, 0.4);
   font-weight: bold;
   justify-content: center;
   height: 40px;
+  background: black;
+  color: white;
+}
+.tab:hover {
+  color: #000000;
+  background: #d0d8d9;
 }
 .active-tab {
   background-color: rgba(0, 0, 0, 0.4);
