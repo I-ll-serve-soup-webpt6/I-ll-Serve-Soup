@@ -363,12 +363,13 @@ body {
 .active-tab {
   background-color: rgba(208, 216, 217, 0.4);
 }
-.openCard {
-  background: rgba(208, 216, 217, 0.4);
-  border-radius: 10px;
-}
 .tabs-item {
   display: none;
+}
+.tabs-item-selected {
+  background: rgba(208, 216, 217, 0.4);
+  border-radius: 10px;
+  display: block;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
