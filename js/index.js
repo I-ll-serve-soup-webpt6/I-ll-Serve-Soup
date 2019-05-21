@@ -1,22 +1,33 @@
-class TabLink {
-    constructor(tabElement){
-      this.tabElement = tabElement;
-      this.tabData = this.tabElement.dataset.tab; 
-      this.cards = document.querySelectorAll('.card');
-      this.cards = Array.from(this.cards).map(card => new TabCard(card));
-      this.tabElement.addEventListener('click',()=>this.selectTab());
-    }
-  
-    selectTab(){
-      const tabs = document.querySelectorAll('.tab');
-      tabs.forEach(tab => tab.classList.remove('active-tab'));
-      const cards = document.querySelectorAll('.card');
-      cards.forEach(card => card.style.display = 'none');
-      this.tabElement.classList.add('active-tab');
-      this.cards.forEach(card => {
-        card.selectCard();
-      });
-    }
-  }
+let about = document.getElementById("aboutCard");
+let market= document.getElementById("marketCard");
+let sales = document.getElementById("salesCard");
+let contact = document.getElementById("contactCard");
 
-let card = document.querySelectorAll('.card').forEach(card => new CardLink(card));
+
+document.getElementById("about").addEventListener("click", function() {
+    about.classList.replace("closed", "open");
+    market.classList.replace("open", "closed");
+    sales.classList.replace("open", "closed");
+    contact.classList.replace("open", "closed");
+  });
+
+document.getElementById("market").addEventListener("click", function() {
+    market.classList.replace("closed", "open");
+    about.classList.replace("open", "closed");
+    sales.classList.replace("open", "closed");
+    contact.classList.replace("open", "closed");
+  });
+
+document.getElementById("sales").addEventListener("click", function() {
+    sales.classList.replace("closed", "open");
+    about.classList.replace("open", "closed");
+    market.classList.replace("open", "closed");
+    contact.classList.replace("open", "closed");
+  });
+
+document.getElementById("contact").addEventListener("click", function() {
+    contact.classList.replace("closed", "open");
+    sales.classList.replace("open", "closed");
+    about.classList.replace("open", "closed");
+    market.classList.replace("open", "closed");
+  });

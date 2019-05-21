@@ -243,18 +243,13 @@ footer .p2 {
   background: #d0d8d9;
 }
 .active-tab {
-<<<<<<< HEAD
-  background-color: grey;
-  opacity: 0.7;
-=======
   background-color: rgba(0, 0, 0, 0.4);
   color: rgb();
 }
-.openCard {
+.open {
   background: rgba(208, 216, 217, 0.4);
->>>>>>> d4f861d67b68797fb39054b9fb917139da1c41d2
   border-radius: 10px;
 }
-.card {
+.closed {
   display: none;
 }
