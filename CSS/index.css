@@ -144,14 +144,21 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+head {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
 .container {
   display: flex;
-  height: 536px;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
 #marketingBackground {
   background-image: url("../assets/background.jpeg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 #salesBackground {
@@ -175,6 +182,7 @@ h5 {
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
+  margin: 12% auto 0% auto;
 }
 .mainNav nav .tab {
   padding-top: 8px;

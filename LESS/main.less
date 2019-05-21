@@ -62,23 +62,32 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 //Personalized styling code after the reset/normalization
+head {
+    height: 100%;
+}
+body{
+    height: 100%;
+}
 .container {
     display: flex;
-    height: 536px;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
 #marketingBackground {
     background-image: url("../assets/background.jpeg");
-    // background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    
     
 }
 #salesBackground {
     background-image: url("../assets/salesbackground.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 // This is the logo image
 .container img {
@@ -96,11 +105,14 @@ h1, h2, h3, h4, h5 {
     background:@mainNavBackground;
     border-radius: 10px;
     border-top: 15px double black;
+    // border: 1px solid red;
     
 
     nav{
         display: flex;
         flex-flow: row nowrap;
+        margin: 12% auto 0% auto;
+        // border: 1px solid red;
         .tab {
             padding-top: 8px;
             padding-left: 30px;
