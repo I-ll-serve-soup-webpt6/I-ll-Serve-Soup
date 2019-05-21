@@ -360,6 +360,11 @@ body {
   background: black;
   color: white;
 }
+.tab:hover {
+  color: #d0d8d9;
+  background: #000000;
+}
+
 .active-tab {
   background-color: rgba(208, 216, 217, 0.4);
 }
