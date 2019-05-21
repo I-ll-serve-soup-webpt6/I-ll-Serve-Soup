@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./CSS/index.css">
-    <script src="./js/index.js"></script>
+    <script src="js/index.js" async></script>
     <title>I'll Serve Soup</title>
 </head>
 <body>
@@ -23,13 +23,13 @@
             </div>
 
             <nav>
-                <div class = "tab" data-tab = "about" alt = "info about marketing team">ABOUT</div>
-                <div class = "tab" data-tab = "marketing">MARKETING</div>
-                <div class = "tab"   data-tab = "sales">SALES</div>
-                <div class = "tab" data-tab = "contact">CONTACT</div>
+                <div class = "tab" id="about" data-tab = "about" alt = "info about marketing team">ABOUT</div>
+                <div class = "tab" id="market" data-tab = "marketing">MARKETING</div>
+                <div class = "tab"  id="sales" data-tab = "sales">SALES</div>
+                <div class = "tab" id="contact" data-tab = "contact">CONTACT</div>
             </nav>
         
-            <div class = "card" data-tab = "about">
+            <div class = "card closed" id="aboutCard" data-tab = "about">
 
                 <div class = "cardInfoBox">
                     <img class = "closeWindow" alt = "click X"/>
@@ -47,7 +47,7 @@
 
             </div>
 
-            <div class = "card" data-tab = "marketing">
+            <div class = "card closed" id="marketCard" data-tab = "marketing">
                 <div class = "cardInfoBox">
                     <img class = "closeWindow" alt = "click X"/>
                     <img class = "cardImg" alt = "marketing card picture"/>
@@ -57,7 +57,7 @@
 
             </div>
 
-            <div class = "card" data-tab = "sales">
+            <div class = "card closed" id="salesCard" data-tab = "sales">
                 <div class = "cardInfoBox">
                     <img class = "closeWindow" src = "#" alt = "click X"/>
                         <img class = "cardImg" src = "#" alt = "sales card picture"/>
@@ -67,7 +67,7 @@
 
             </div>
 
-            <div class = "card" data-tab = "contact">
+            <div class = "card closed" id="contactCard" data-tab = "contact">
                 <div class = "cardInfoBox">
                     <img class = "closeWindow" src = "#" alt = "clcick X"/>
                     <img class= "cardImg" src = "#" alt = "contact card picture"/>
