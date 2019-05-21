@@ -254,7 +254,7 @@ header .volunteerTab {
   width: 300px;
   color: #9ca4ab;
   font-weight: bold;
-  margin: auto 200px auto 100px;
+  margin: auto 10% auto 10%;
 }
 header h1 {
   height: 30px;
@@ -270,7 +270,7 @@ header .signInTab {
   color: #9ca4ab;
   height: 15px;
   width: 60px;
-  margin: auto 0px auto 10%;
+  margin: auto 2px auto 10%;
   padding: auto auto;
 }
 header .signInTab a {
