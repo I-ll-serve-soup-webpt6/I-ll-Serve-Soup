@@ -20,3 +20,4 @@ class TabLink {
   }
 
 let card = document.querySelectorAll('.card').forEach(card => new CardLink(card));
+
