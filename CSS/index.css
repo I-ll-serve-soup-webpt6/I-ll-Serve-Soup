@@ -104,7 +104,11 @@ nav,
 section {
   display: block;
 }
+head {
+  height: 100%;
+}
 body {
+  height: 100%;
   line-height: 1;
 }
 ol,
@@ -144,12 +148,21 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-head {
-  height: 100%;
+/* Mixin Example from preprocessing project
+    The point to remember is that declaring a mixin is a little different from declaring a functino
+  MIXIN.LESS
+ .btn (@color, @background-color) {
+    color:@color;
+    background-color:@background-color;
+    height: 40px;
+    width:75%;
 }
-body {
-  height: 100%;
+this part targets any button tag within the destination class
+.destination button {
+    .btn(white, @button-bg);
 }
+
+*/
 .container {
   display: flex;
   height: 100%;
@@ -158,11 +171,6 @@ body {
 }
 #marketingBackground {
   background-image: url("../assets/background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#salesBackground {
-  background-image: url("../assets/salesbackground.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -196,6 +204,9 @@ body {
   background: black;
   color: white;
 }
+.tab:hover {
+  color: red;
+}
 .active-tab {
   background-color: rgba(208, 216, 217, 0.4);
 }
@@ -204,7 +215,13 @@ body {
   border-radius: 10px;
 }
 .card {
-  display: flex;
+  display: none;
+  width: 60%;
+  height: 70%;
+  margin: auto auto;
+  background: #000000;
+  border-radius: 10px;
+  border: 1px double grey;
 }
 .close {
   display: none;
@@ -212,6 +229,11 @@ body {
 .xBtn {
   background: transparent;
   border: 1px solid red;
+}
+#salesBackground {
+  background-image: url("../assets/salesbackground.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header {
   position: fixed;
@@ -291,11 +313,4 @@ footer .p1 {
 }
 footer .p2 {
   margin: auto 100px;
-}
-.open {
-  background: rgba(208, 216, 217, 0.4);
-  border-radius: 10px;
-}
-.closed {
-  display: none;
 }

@@ -1,0 +1,19 @@
+/* Mixin Example from preprocessing project
+    The point to remember is that declaring a mixin is a little different from declaring a functino
+  MIXIN.LESS
+ .btn (@color, @background-color) {
+    color:@color;
+    background-color:@background-color;
+    height: 40px;
+    width:75%;
+}
+this part targets any button tag within the destination class
+.destination button {
+    .btn(white, @button-bg);
+}
+
+*/
+.tabHover (@hoverColor:@tabHoverColor, @backgroundColor:@tabHoverBkrd){
+    color:@hoverColor;
+    background: @backgroundColor;
+}
