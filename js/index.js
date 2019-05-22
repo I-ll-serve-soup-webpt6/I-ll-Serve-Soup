@@ -27,3 +27,4 @@ class TabLink {
   }
   let links = document.querySelectorAll(".tabs-link").forEach(tab => new TabLink(tab));
 
+  
