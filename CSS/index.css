@@ -148,8 +148,6 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-@tablet (min-width:800px);
-@phone (min-width:500px);
 /* Mixin Example from preprocessing project
     The point to remember is that declaring a mixin is a little different from declaring a functino
   MIXIN.LESS
@@ -528,7 +526,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
   background-color: #D5F1F3;
   height: 60px;
   width: 100%;
