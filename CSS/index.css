@@ -332,12 +332,18 @@ body {
   background-size: cover;
 }
 .container img {
-  width: 20%;
-  height: 20%;
-  margin: 2% 55% 15% 40%;
+  width: 25%;
+  height: 45%;
+  margin-top: 4%;
+}
+.headerLogo {
+  display: flex;
+  justify-content: center;
+  height: 50%;
 }
 .mainNav {
   min-width: 483px;
+  min-height: 316px;
   width: 45%;
   height: 50%;
   margin: auto auto;
@@ -348,9 +354,10 @@ body {
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
-  margin: 12% auto 0% auto;
+  height: 50%;
 }
 .mainNav nav .tab {
+  margin: auto auto 0% auto;
   display: flex;
   padding-top: 2%;
   width: 25%;
@@ -568,7 +575,6 @@ footer {
   footer {
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
   }
 }
 footer .p1 {
