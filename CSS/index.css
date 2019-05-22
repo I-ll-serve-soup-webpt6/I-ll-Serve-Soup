@@ -321,6 +321,11 @@ body {
   padding: 0;
   margin: 0;
 }
+@media (max-width: 503px) {
+  .container {
+    min-width: 308px;
+  }
+}
 #marketingBackground {
   background-image: url("../assets/background.jpeg");
   background-repeat: no-repeat;
@@ -351,10 +356,25 @@ body {
   border-radius: 10px;
   border-top: 15px double black;
 }
+@media (max-width: 503px) {
+  .mainNav {
+    display: flex;
+    flex-direction: column;
+    min-width: 308px;
+    width: 483px;
+  }
+}
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
   height: 50%;
+}
+@media (max-width: 503px) {
+  .mainNav nav {
+    display: flex;
+    flex-direction: column;
+    min-width: 308px;
+  }
 }
 .mainNav nav .tab {
   margin: auto auto 0% auto;
@@ -367,6 +387,12 @@ body {
   height: 40px;
   background: black;
   color: white;
+}
+@media (max-width: 503px) {
+  .mainNav nav .tab {
+    width: 100%;
+    min-width: 308px;
+  }
 }
 .active-tab {
   background-color: rgba(208, 216, 217, 0.4);
@@ -386,13 +412,16 @@ body {
 }
 .content-header {
   text-align: center;
-  font-size: 140%;
+  font-size: 1.4rem;
+  height: 45%;
+  width: 40%;
   margin-bottom: 6%;
   font-weight: bold;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
   padding: 5%;
+  margin-top: 10%;
 }
 .main-content {
   display: flex;
@@ -410,25 +439,28 @@ body {
   flex-wrap: wrap;
 }
 .donattionForm {
-  width: 150%;
-  height: 140%;
+  width: 30%;
+  min-width: 182px;
+  max-height: 387px;
+  height: 40%;
+  margin-top: 15%;
+  font-size: 1.4rem;
   margin: auto auto;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
   padding: 5%;
 }
-.productFeature {
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 0;
-}
-.productFeature img {
-  width: 115%;
-  height: 150%;
-  margin: auto auto;
-  border-radius: 10px;
-}
+/*.productFeature {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    img {
+        width: 115%;
+        height: 150%;
+        margin: auto auto;
+        border-radius: 10px;
+    }*/
 .content-form {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
@@ -480,6 +512,11 @@ header {
     justify-content: space-evenly;
     margin-bottom: 10%;
     min-height: 162px;
+  }
+}
+@media (max-width: 503px) {
+  header {
+    min-width: 308px;
   }
 }
 header .volunteerTab {
