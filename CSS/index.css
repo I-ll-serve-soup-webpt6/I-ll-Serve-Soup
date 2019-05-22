@@ -382,6 +382,10 @@ body {
   font-size: 140%;
   margin-bottom: 6%;
   font-weight: bold;
+  background: rgba(208, 216, 217, 0.4);
+  border-radius: 10px;
+  border-top: 15px double black;
+  padding: 5%;
 }
 .main-content {
   display: flex;
@@ -405,16 +409,18 @@ body {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
+  padding: 5%;
 }
 .productFeature {
   margin-left: 10%;
+  margin-right: 10%;
   padding: 0;
 }
 .productFeature img {
-  width: 95%;
-  height: 130%;
+  width: 115%;
+  height: 150%;
   margin: auto auto;
-  border-radius: 2%;
+  border-radius: 10px;
 }
 .content-form {
   font-family: 'Bangers', cursive;
@@ -435,7 +441,7 @@ body {
   border: 0;
   color: white;
   padding: 2% 5% 2% 5%;
-  border-radius: 15%;
+  border-radius: 10px;
   margin-bottom: 5%;
 }
 .content-form form {
