@@ -377,6 +377,79 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.content-header {
+  text-align: center;
+  font-size: 140%;
+  margin-bottom: 6%;
+  font-weight: bold;
+  background: rgba(208, 216, 217, 0.4);
+  border-radius: 10px;
+  border-top: 15px double black;
+  padding: 5%;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.salesContent {
+  display: flex;
+  margin-left: 18%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.donattionForm {
+  width: 150%;
+  height: 140%;
+  margin: auto auto;
+  background: rgba(208, 216, 217, 0.4);
+  border-radius: 10px;
+  border-top: 15px double black;
+  padding: 5%;
+}
+.productFeature {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+}
+.productFeature img {
+  width: 115%;
+  height: 150%;
+  margin: auto auto;
+  border-radius: 10px;
+}
+.content-form {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.content-form h2 {
+  font-weight: bold;
+  font-size: 120%;
+  margin-top: 5%;
+}
+.content-form p {
+  margin-bottom: 5%;
+}
+.content-form button {
+  background-color: #6cb043;
+  border: 0;
+  color: white;
+  padding: 2% 5% 2% 5%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+.content-form form {
+  margin-bottom: 5%;
+}
+.content-form form input {
+  width: 90%;
+}
 header {
   position: fixed;
   top: 0;
