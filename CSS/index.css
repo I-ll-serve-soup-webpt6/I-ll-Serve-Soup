@@ -332,11 +332,12 @@ body {
   background-size: cover;
 }
 .container img {
-  width: 110px;
-  height: 110px;
+  width: 20%;
+  height: 20%;
   margin: 2% 55% 15% 40%;
 }
 .mainNav {
+  min-width: 483px;
   width: 45%;
   height: 50%;
   margin: auto auto;
@@ -350,8 +351,8 @@ body {
   margin: 12% auto 0% auto;
 }
 .mainNav nav .tab {
-  padding-top: 8px;
-  padding-left: 30px;
+  display: flex;
+  padding-top: 2%;
   width: 25%;
   border: 1px solid rgba(208, 216, 217, 0.4);
   font-weight: bold;
@@ -457,13 +458,16 @@ header {
   padding: 0;
 }
 header .volunteerTab {
+  min-width: 100px;
   height: 20px;
   width: 300px;
   color: #9ca4ab;
   font-weight: bold;
-  margin: auto 200px auto 100px;
+  margin: auto 10% auto 10%;
+  min-width: 194px;
 }
 header h1 {
+  min-width: 258px;
   height: 30px;
   width: 300px;
   justify-content: center;
@@ -477,20 +481,22 @@ header .signInTab {
   color: #9ca4ab;
   height: 15px;
   width: 60px;
-  margin: auto 0px auto 10%;
+  margin: auto 2px auto 10%;
   padding: auto auto;
+  min-width: 60px;
 }
 header .signInTab a {
   text-decoration: none;
   color: #9ca4ab;
 }
 header .headerBtn {
+  min-width: 100px;
   color: #6cb043;
   height: 35px;
   width: 140px;
   background: white;
   border-radius: 5px;
-  margin: auto 100px auto 0px;
+  margin: auto 10% auto 0px;
   border: 1px solid #6cb043;
 }
 header .headerBtnsales {
@@ -499,7 +505,7 @@ header .headerBtnsales {
   width: 140px;
   background: white;
   border-radius: 5px;
-  margin: auto 100px auto 0px;
+  margin: auto 10% auto 0px;
   border: 1px solid #6cb043;
   visibility: hidden;
 }
@@ -517,8 +523,10 @@ footer {
   margin: 0;
 }
 footer .p1 {
-  margin: auto 100px;
+  margin: auto 10%;
+  min-width: 201px;
 }
 footer .p2 {
-  margin: auto 100px;
+  min-width: 308px;
+  margin: auto 10%;
 }

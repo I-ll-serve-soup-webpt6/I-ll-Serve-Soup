@@ -13,9 +13,3 @@ this part targets any button tag within the destination class
 }
 
 */
-// The hover CSS function is not working with the mixin and it isn't working without the mixin.  I declared 
-// it in main.less.
-.tabHover (@hoverColor:@tabHoverColor, @backgroundColor:@tabHoverBkrd){
-    color:@hoverColor;
-    background: @backgroundColor;
-}
