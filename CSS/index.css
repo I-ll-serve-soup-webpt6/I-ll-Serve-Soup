@@ -148,6 +148,8 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+@tablet (min-width:800px);
+@phone (min-width:500px);
 /* Mixin Example from preprocessing project
     The point to remember is that declaring a mixin is a little different from declaring a functino
   MIXIN.LESS
@@ -459,6 +461,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-evenly;
   font-family: "sans-serif";
   margin: 0;
   padding: 0;
@@ -466,9 +469,10 @@ header {
 header .volunteerTab {
   min-width: 100px;
   height: 20px;
-  width: 300px;
+  width: 194px;
   color: #9ca4ab;
   font-weight: bold;
+  border: 1px solid red;
   margin: auto 10% auto 10%;
   min-width: 194px;
 }
@@ -481,6 +485,7 @@ header h1 {
   margin: auto 0px auto;
   padding: 0;
   color: #6cb043;
+  border: 1px solid red;
   font-weight: bold;
 }
 header .signInTab {
@@ -490,6 +495,7 @@ header .signInTab {
   margin: auto 2px auto 10%;
   padding: auto auto;
   min-width: 60px;
+  border: 1px solid red;
 }
 header .signInTab a {
   text-decoration: none;
@@ -522,6 +528,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border: 1px solid red;
   background-color: #D5F1F3;
   height: 60px;
   width: 100%;
