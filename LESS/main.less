@@ -92,30 +92,35 @@ body{
 // This is the logo image
 .container img {
     // border: 1px solid red;
-    width: 110px;
-    height: 110px;
-    margin: 2% 55% 15% 40%;
+    width: 20%;
+    height: 20%;
+     margin: 2% 55% 15% 40%;
    
     
 }
 .mainNav{
+    min-width: 483px;
     width: 45%;
     height: 50%;
     margin: auto auto;
     background:@mainNavBackground;
     border-radius: 10px;
     border-top: 15px double black;
-    // border: 1px solid red;
+    
+     border: 1px solid red;
     
 
     nav{
         display: flex;
         flex-flow: row nowrap;
         margin: 12% auto 0% auto;
-        // border: 1px solid red;
+         border: 1px solid red;
+         
         .tab {
-            padding-top: 8px;
-            padding-left: 30px;
+        
+            display: flex;
+            padding-top: 2%;
+            justify-content: center;
             width: 25%;
             border: 1px solid @mainNavBackground;
             font-weight: bold;
@@ -123,20 +128,13 @@ body{
             height: 40px;
             background: black;
             color: white;
+        
             
         }
         
     }
 
 }
-<<<<<<< HEAD
-.tab:hover{
-    
-     .tabHover();
-}
-=======
-
->>>>>>> 57de07f4dff176d9d8419529f355e8a9602d8287
 .active-tab {
     background-color: @mainNavBackground;
 
