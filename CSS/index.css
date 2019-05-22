@@ -344,13 +344,11 @@ body {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
-  border: 1px solid red;
 }
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
   margin: 12% auto 0% auto;
-  border: 1px solid red;
 }
 .mainNav nav .tab {
   display: flex;
@@ -398,7 +396,6 @@ header .volunteerTab {
   width: 300px;
   color: #9ca4ab;
   font-weight: bold;
-  border: 1px solid red;
   margin: auto 10% auto 10%;
   min-width: 194px;
 }
@@ -420,7 +417,6 @@ header .signInTab {
   margin: auto 2px auto 10%;
   padding: auto auto;
   min-width: 60px;
-  border: 1px solid red;
 }
 header .signInTab a {
   text-decoration: none;
