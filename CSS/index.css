@@ -321,6 +321,11 @@ body {
   padding: 0;
   margin: 0;
 }
+@media (max-width: 503px) {
+  .container {
+    min-width: 308px;
+  }
+}
 #marketingBackground {
   background-image: url("../assets/background.jpeg");
   background-repeat: no-repeat;
@@ -351,10 +356,25 @@ body {
   border-radius: 10px;
   border-top: 15px double black;
 }
+@media (max-width: 503px) {
+  .mainNav {
+    display: flex;
+    flex-direction: column;
+    min-width: 308px;
+    width: 483px;
+  }
+}
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
   height: 50%;
+}
+@media (max-width: 503px) {
+  .mainNav nav {
+    display: flex;
+    flex-direction: column;
+    min-width: 308px;
+  }
 }
 .mainNav nav .tab {
   margin: auto auto 0% auto;
@@ -367,6 +387,12 @@ body {
   height: 40px;
   background: black;
   color: white;
+}
+@media (max-width: 503px) {
+  .mainNav nav .tab {
+    width: 100%;
+    min-width: 308px;
+  }
 }
 .active-tab {
   background-color: rgba(208, 216, 217, 0.4);
@@ -480,6 +506,11 @@ header {
     justify-content: space-evenly;
     margin-bottom: 10%;
     min-height: 162px;
+  }
+}
+@media (max-width: 503px) {
+  header {
+    min-width: 308px;
   }
 }
 header .volunteerTab {
