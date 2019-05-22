@@ -1,4 +1,77 @@
-@import './salesmixins.less';
-@import './salesvariables.less';
 
+#salesBackground {
+    background-image: url("../assets/salesbackground.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.content-header {
+    text-align: center;
+    font-size: 140%;
+    margin-bottom: 6%;
+    font-weight: bold;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
 
+}
+.salesContent {
+    display: flex;
+    margin-left: 18%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.donattionForm{
+    width: 150%;
+    height: 140%;
+    margin: auto auto;
+    background:@mainNavBackground;
+    border-radius: 10px;
+    border-top: 15px double black;
+    // border: 1px solid red;
+}
+.productFeature {
+    margin-left: 10%;
+    padding: 0;
+    img {
+        width: 95%;
+        height: 130%;
+        margin: auto auto;
+        border-radius: 2%;
+    }
+}
+.content-form {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: center;
+
+    h2 {
+        font-weight: bold;
+        font-size: 120%;
+        margin-top: 5%;
+    }
+    p {
+        margin-bottom: 5%;
+    }
+    button {
+        background-color: @headerFooterSubTitleFonts;
+        border: 0;
+        color: white;
+        padding: 2% 5% 2% 5%;
+        border-radius: 15%;
+        margin-bottom: 5%;
+    }
+    form {
+        margin-bottom: 5%;
+        input {
+            width:90%;
+        }
+    }
+}
