@@ -132,7 +132,8 @@ body{
         display: flex;
         flex-flow: row nowrap;
         background:@mainNavBackground;
-        // margin: 12% auto 0% auto;
+        border-radius: 10px;
+        margin:  auto auto;
         // border: 1px solid red;
         height: 50%;  
         @media(max-width:@phone){
@@ -176,5 +177,10 @@ body{
 .tabs-item-selected {
     background: @mainNavBackground;
     border-radius: 10px;
-    display: block;
+    display: flex;
+    
 };
+
+.activTabMainNav {
+    background-color: aquamarine;
+}

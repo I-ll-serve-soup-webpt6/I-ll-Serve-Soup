@@ -368,6 +368,8 @@ body {
   display: flex;
   flex-flow: row nowrap;
   background: rgba(208, 216, 217, 0.4);
+  border-radius: 10px;
+  margin: auto auto;
   height: 50%;
 }
 @media (max-width: 503px) {
@@ -406,6 +408,9 @@ body {
   border-radius: 10px;
   display: block;
 }
+.activTabMainNav {
+  background-color: aquamarine;
+}
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
   background-repeat: no-repeat;
@@ -413,13 +418,16 @@ body {
 }
 .content-header {
   text-align: center;
-  font-size: 140%;
+  font-size: 1.4rem;
+  height: 45%;
+  width: 40%;
   margin-bottom: 6%;
   font-weight: bold;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
   padding: 5%;
+  margin-top: 10%;
 }
 .main-content {
   display: flex;
@@ -437,25 +445,32 @@ body {
   flex-wrap: wrap;
 }
 .donattionForm {
-  width: 150%;
-  height: 140%;
+  display: flex;
+  width: 30%;
+  min-width: 182px;
+  max-height: 387px;
+  height: 40%;
+  margin-top: 15%;
+  font-size: 1.4rem;
   margin: auto auto;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
   padding: 5%;
 }
-.productFeature {
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 0;
+.missionStatement {
+  min-width: 180px;
 }
-.productFeature img {
-  width: 115%;
-  height: 150%;
-  margin: auto auto;
-  border-radius: 10px;
-}
+/*.productFeature {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    img {
+        width: 115%;
+        height: 150%;
+        margin: auto auto;
+        border-radius: 10px;
+    }*/
 .content-form {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
@@ -619,4 +634,7 @@ footer .p1 {
 footer .p2 {
   min-width: 308px;
   margin: auto 10%;
+}
+.activTabFooter {
+  background-color: aquamarine;
 }
