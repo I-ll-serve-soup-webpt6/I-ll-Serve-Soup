@@ -26,6 +26,7 @@ class TabLink {
       selectedTab (this.element)
     }
   }
+  
   let links = document.querySelectorAll(".tabs-link").forEach(tab => new TabLink(tab));
 
   const singIn = document.querySelector('.signInTab');
