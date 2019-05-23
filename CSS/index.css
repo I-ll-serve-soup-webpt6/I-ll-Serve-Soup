@@ -397,6 +397,10 @@ body {
 .active-tab {
   background-color: rgba(208, 216, 217, 0.4);
 }
+.xBtn {
+  display: flex;
+  border: 1px solid red;
+}
 .tabs-item {
   display: none;
   background: transparent;
@@ -404,6 +408,9 @@ body {
 .tabs-item-selected {
   border-radius: 10px;
   display: flex;
+}
+.close {
+  display: none;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
