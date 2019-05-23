@@ -368,6 +368,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   background: rgba(208, 216, 217, 0.4);
+  border-radius: 10px;
   height: 50%;
 }
 @media (max-width: 503px) {
@@ -405,6 +406,9 @@ body {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   display: block;
+}
+.activTabMainNav {
+  background-color: aquamarine;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
@@ -619,4 +623,7 @@ footer .p1 {
 footer .p2 {
   min-width: 308px;
   margin: auto 10%;
+}
+.activTabFooter {
+  background-color: aquamarine;
 }
