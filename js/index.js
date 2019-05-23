@@ -25,6 +25,7 @@ class TabLink {
     select() {
       const items = document.querySelectorAll('.tabs-item').forEach(item => item.classList.remove('tabs-item-selected'));
       this.element.classList.add('tabs-item-selected');
+      selectedTab (this.element)
     }
   }
 
@@ -51,9 +52,14 @@ class TabLink {
     console.log("sign in button was clicked")
     window.location.href = "https://projects.invisionapp.com/share/Z6RLWHYRC2K#/screens";
   });
+ let footer = document.querySelector('footer');
+ let nav = document.querySelector('mainNav');
+  function selectedTab (element) {
+    footer.classList.add("activTabFooter");
+    // console.log(nav)
+    // nav.classList.add("activTabMainNav");
+    
+  }
+  
  
-  // this.xBtn = document.querySelectorAll('.xBtn');
-      // this.element.addEventListener('click', ()=>{
-        // this.closeTab()
 
-       
