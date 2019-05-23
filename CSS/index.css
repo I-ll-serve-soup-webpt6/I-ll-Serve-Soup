@@ -400,6 +400,10 @@ body {
 .active-tab {
   background-color: rgba(208, 216, 217, 0.4);
 }
+.xBtn {
+  display: flex;
+  border: 1px solid red;
+}
 .tabs-item {
   display: none;
 }
@@ -410,6 +414,9 @@ body {
 }
 .activTabMainNav {
   background-color: aquamarine;
+}
+.close {
+  display: none;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
