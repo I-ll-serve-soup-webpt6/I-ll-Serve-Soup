@@ -14,6 +14,12 @@ class TabLink {
       this.element.classList.toggle('tabs-link-selected');
       this.tabItem.select();
     }
+
+    closeTab() {
+      xBtn.addEventListener('click', (element) =>{
+          this.element.classList.toggle('tabs-link-selected');
+      });
+    }
   }
   
   class TabItem {
@@ -34,3 +40,5 @@ class TabLink {
     window.location.href = "https://projects.invisionapp.com/share/Z6RLWHYRC2K#/screens";
   });
  
+  const xBtn = document.querySelectorAll(".xBtn");
+  
