@@ -14,6 +14,12 @@ class TabLink {
       this.element.classList.toggle('tabs-link-selected');
       this.tabItem.select();
     }
+
+    closeTab() {
+      xBtn.addEventListener('click', (element) =>{
+          this.element.classList.toggle('tabs-link-selected');
+      });
+    }
   }
   
   class TabItem {
@@ -42,4 +48,7 @@ class TabLink {
     // nav.classList.add("activTabMainNav");
     
   }
+  
+ 
+  const xBtn = document.querySelectorAll(".xBtn");
   
