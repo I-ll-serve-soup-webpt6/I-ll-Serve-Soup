@@ -6,7 +6,12 @@ class TabLink {
       this.tabItem =  new TabItem(this.itemElement);
       this.element.addEventListener('click', () => {
           this.select()
-      })
+      });
+      this.xBtn = document.querySelectorAll('.xBtn');
+      this.element.addEventListener('click', ()=>{
+        this.closeTab()
+      });
+  
     };
   
     select() {
@@ -50,5 +55,4 @@ class TabLink {
   }
   
  
-  const xBtn = document.querySelectorAll(".xBtn");
   
