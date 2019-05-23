@@ -367,7 +367,6 @@ body {
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
-  background: rgba(208, 216, 217, 0.4);
   height: 50%;
 }
 @media (max-width: 503px) {
@@ -400,9 +399,9 @@ body {
 }
 .tabs-item {
   display: none;
+  background: transparent;
 }
 .tabs-item-selected {
-  background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   display: flex;
 }
@@ -517,11 +516,6 @@ header {
     justify-content: space-evenly;
     min-height: 162px;
     margin-bottom: 10%;
-  }
-}
-@media (max-width: 503px) {
-  header {
-    min-width: 308px;
   }
 }
 @media (max-width: 503px) {
