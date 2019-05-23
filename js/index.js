@@ -40,7 +40,12 @@ class TabLink {
     document.querySelectorAll(`.tabs-item`).forEach(item => item.classList.remove('tabs-item-selected'));
     }
     }
-  
+    class MainNavClassDisplay{
+    constructor (element){
+    this.element = element;
+    }
+    
+  } 
 
   let links = document.querySelectorAll(".tabs-link").forEach(tab => new TabLink(tab));
 
