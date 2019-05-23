@@ -28,4 +28,9 @@ class TabLink {
   
   let links = document.querySelectorAll(".tabs-link").forEach(tab => new TabLink(tab));
 
-  
+  const singIn = document.querySelector('.signInTab');
+  singIn.addEventListener('click', (element) => {
+    console.log("sign in button was clicked")
+    window.location.href = "https://projects.invisionapp.com/share/Z6RLWHYRC2K#/screens";
+  });
+ 
