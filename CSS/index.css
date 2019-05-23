@@ -367,7 +367,6 @@ body {
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
-  background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   margin: auto auto;
   height: 50%;
@@ -408,15 +407,11 @@ body {
   display: none;
 }
 .tabs-item-selected {
-  background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
-  display: block;
+  display: flex;
 }
 .activTabMainNav {
   background-color: aquamarine;
-}
-.close {
-  display: none;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
@@ -642,6 +637,7 @@ footer .p2 {
   min-width: 308px;
   margin: auto 10%;
 }
-.activTabFooter {
+.activeHeaderFooter {
   background-color: aquamarine;
+  position: relative;
 }
