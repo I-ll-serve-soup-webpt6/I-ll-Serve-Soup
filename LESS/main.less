@@ -84,11 +84,16 @@ body{
     background-image: url("../assets/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    
+
+    
+    
 }
 #salesBackground {
     background-image: url("../assets/salesbackground.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 // This is the logo image
 .container img {
@@ -126,8 +131,9 @@ body{
         
         display: flex;
         flex-flow: row nowrap;
-        // background:@mainNavBackground;
-        // margin: 12% auto 0% auto;
+        background:@mainNavBackground;
+        border-radius: 10px;
+        margin:  auto auto;
         // border: 1px solid red;
         height: 50%;  
         @media(max-width:@phone){
@@ -170,14 +176,16 @@ body{
 
 .tabs-item {
     display: none;
-    background:transparent;
 }
 .tabs-item-selected {
-    // background: @mainNavBackground;
+    background: @mainNavBackground;
     border-radius: 10px;
     display: flex;
     
 };
-.close {
-    display: none;
+
+
+.activTabMainNav {
+    background-color: aquamarine;
 }
+

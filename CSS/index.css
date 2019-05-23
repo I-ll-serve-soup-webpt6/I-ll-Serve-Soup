@@ -367,6 +367,9 @@ body {
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
+  background: rgba(208, 216, 217, 0.4);
+  border-radius: 10px;
+  margin: auto auto;
   height: 50%;
 }
 @media (max-width: 503px) {
@@ -403,11 +406,14 @@ body {
 }
 .tabs-item {
   display: none;
-  background: transparent;
 }
 .tabs-item-selected {
+  background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
-  display: flex;
+  display: block;
+}
+.activTabMainNav {
+  background-color: aquamarine;
 }
 .close {
   display: none;
@@ -635,4 +641,7 @@ footer .p1 {
 footer .p2 {
   min-width: 308px;
   margin: auto 10%;
+}
+.activTabFooter {
+  background-color: aquamarine;
 }
