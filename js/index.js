@@ -25,6 +25,7 @@ class TabLink {
       this.element.classList.add('tabs-item-selected');
     }
   }
+  
   let links = document.querySelectorAll(".tabs-link").forEach(tab => new TabLink(tab));
 
   

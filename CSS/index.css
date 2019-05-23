@@ -403,7 +403,7 @@ body {
 .tabs-item-selected {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
-  display: block;
+  display: flex;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
@@ -439,6 +439,7 @@ body {
   flex-wrap: wrap;
 }
 .donattionForm {
+  display: flex;
   width: 30%;
   min-width: 182px;
   max-height: 387px;
@@ -450,6 +451,9 @@ body {
   border-radius: 10px;
   border-top: 15px double black;
   padding: 5%;
+}
+.missionStatement {
+  min-width: 180px;
 }
 /*.productFeature {
     margin-left: 10%;
