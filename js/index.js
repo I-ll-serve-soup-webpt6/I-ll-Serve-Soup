@@ -6,7 +6,12 @@ class TabLink {
       this.tabItem =  new TabItem(this.itemElement);
       this.element.addEventListener('click', () => {
           this.select()
-      })
+      });
+      this.xBtn = document.querySelectorAll('.xBtn');
+      this.element.addEventListener('click', ()=>{
+        this.closeTab()
+      });
+  
     };
   
     select() {
@@ -40,5 +45,4 @@ class TabLink {
     window.location.href = "https://projects.invisionapp.com/share/Z6RLWHYRC2K#/screens";
   });
  
-  const xBtn = document.querySelectorAll(".xBtn");
   
