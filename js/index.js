@@ -46,11 +46,11 @@ class TabLink {
     window.location.href = "https://projects.invisionapp.com/share/Z6RLWHYRC2K#/screens";
   });
  let footer = document.querySelector('footer');
- let nav = document.querySelector('mainNav');
+ let nav = document.querySelector('nav');
   function selectedTab (element) {
-    footer.classList.add("activTabFooter");
+    // footer.classList.add("activTabFooter");
     // console.log(nav)
-    // nav.classList.add("activTabMainNav");
+    nav.classList.add("activTabMainNav");
     
   }
   

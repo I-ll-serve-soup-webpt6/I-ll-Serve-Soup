@@ -370,7 +370,7 @@ body {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   margin: auto auto;
-  height: 50%;
+  height: 25%;
 }
 @media (max-width: 503px) {
   .mainNav nav {
@@ -406,10 +406,7 @@ body {
 .tabs-item-selected {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
-  display: block;
-}
-.activTabMainNav {
-  background-color: aquamarine;
+  display: flex;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
