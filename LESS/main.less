@@ -111,9 +111,13 @@ body{
     height: 50%;
 }
 .mainNav{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
     min-width: 483px;
     min-height: 316px;
-    width: 45%;
+    width: 500px;
+    
     height: auto;
     margin: auto auto auto auto;
     background:@mainNavBackground;
@@ -135,7 +139,8 @@ body{
         flex-flow: row nowrap;
         // WE DON'T NEED THIS.  IT DISPLAYS THAT AWKWARD MIDDLE BOX background:@mainNavBackground;
         border-radius: 10px;
-        margin:  auto auto;
+        margin:  10% auto 0% auto;
+        width: 100%;
         // border: 1px solid red;
         height: 35%;  
         @media(max-width:@phone){

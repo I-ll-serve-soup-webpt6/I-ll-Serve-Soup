@@ -69,12 +69,12 @@ let resizedPageElements = document.querySelector('.mainNav');
 do { header.classList.add('activeHeaderFooter')}while (resizedPageElements.style.display !== "none");
 do {footer.classList.remove('activeHeaderFoot')}while (resizedPageElements.style.display === "none");
 */
-//  function selectedFooter () {
+ function selectedFooter () {
   // footer.classList.add("activeFooter");
   // console.log(nav)
   nav.classList.add("activTabMainNav");
   
-// }
+ }
   
  
 
