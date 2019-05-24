@@ -97,7 +97,7 @@ body{
 }
 // This is the logo image
 .container img {
-    //   border: 1px solid red;
+    //  border: 1px solid red;
      width:  22%;
      height: 45%;
      min-width: 110px;
@@ -114,24 +114,19 @@ body{
     min-width: 483px;
     min-height: 316px;
     width: 45%;
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: auto;
     margin: auto auto auto auto;
     background:@mainNavBackground;
     border-radius: 10px;
     border-top: 15px double black;
-    //   border: 1px solid red;
     @media(max-width:@phone){
         display: flex;
         flex-direction: column;
         min-width: 308px;
         width: 483px;
-        height: auto;
     }
     
-    
+    //   border: 1px solid red;
     
 
     nav{
@@ -140,15 +135,14 @@ body{
         flex-flow: row nowrap;
         // WE DON'T NEED THIS.  IT DISPLAYS THAT AWKWARD MIDDLE BOX background:@mainNavBackground;
         border-radius: 10px;
-        margin:  10% auto 0% auto;
+        margin:  auto auto;
         // border: 1px solid red;
-        height: 25%;  
-        width: 100%;
+        height: 35%;  
         @media(max-width:@phone){
             display: flex;
             flex-direction: column;
             min-width: 308px;
-            //  border: 1px solid red;
+            // border: 1px solid red;
         }
         
         .tab {
