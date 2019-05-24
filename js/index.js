@@ -66,7 +66,7 @@ class TabLink {
 
  let footer = document.querySelector('footer');
  let nav = document.querySelector('nav');
-  function selectedTab (element) {
+  // function selectedTab (element) {}
     // footer.classList.add("activTabFooter");
 /*
   let header = document.querySelector('header');
