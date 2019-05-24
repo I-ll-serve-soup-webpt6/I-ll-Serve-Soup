@@ -409,6 +409,14 @@ body {
 .tabs-item-selected {
   border-radius: 10px;
   display: flex;
+<<<<<<< HEAD
+=======
+
+}
+.activTabMainNav {
+  background-color: aquamarine;
+
+>>>>>>> 196e0add88586a4cddc849520fb0278812d9a784
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
