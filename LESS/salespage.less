@@ -18,7 +18,12 @@
     padding: 5%;
     margin-top: 10%;
     @media(max-width:@tablet){
-
+        position: relative;
+        top: auto;
+    }
+    @media(max-width:@tablet){
+        position: relative;
+        top: auto;
     }
     // border: 1px solid red;
 }
@@ -30,6 +35,12 @@
     align-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
+    @media(max-width:@phone){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 .salesContent {
     display: flex;

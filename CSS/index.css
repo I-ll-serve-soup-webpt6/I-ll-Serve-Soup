@@ -337,8 +337,11 @@ body {
   background-size: cover;
 }
 .container img {
+  border: 1px solid red;
   width: 22%;
   height: 45%;
+  min-width: 110px;
+  min-height: 110px;
   margin-top: 4%;
 }
 .headerLogo {
@@ -351,6 +354,9 @@ body {
   min-height: 316px;
   width: 45%;
   height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: auto auto auto auto;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
@@ -362,14 +368,16 @@ body {
     flex-direction: column;
     min-width: 308px;
     width: 483px;
+    height: auto;
   }
 }
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
   border-radius: 10px;
-  margin: auto auto;
+  margin: 10% auto 0% auto;
   height: 25%;
+  width: 100%;
 }
 @media (max-width: 503px) {
   .mainNav nav {
@@ -409,11 +417,6 @@ body {
 .tabs-item-selected {
   border-radius: 10px;
   display: flex;
-
-}
-.activTabMainNav {
-  background-color: aquamarine;
-
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
@@ -433,6 +436,18 @@ body {
   padding: 5%;
   margin-top: 10%;
 }
+@media (max-width: 800px) {
+  .content-header {
+    position: relative;
+    top: auto;
+  }
+}
+@media (max-width: 800px) {
+  .content-header {
+    position: relative;
+    top: auto;
+  }
+}
 .main-content {
   display: flex;
   flex-direction: row;
@@ -441,6 +456,14 @@ body {
   align-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
+}
+@media (max-width: 503px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .salesContent {
   display: flex;
@@ -519,6 +542,8 @@ header {
 }
 @media (max-width: 800px) {
   header {
+    position: relative;
+    top: auto;
     display: flex;
     height: 5%;
     flex-direction: column;
@@ -531,6 +556,8 @@ header {
 @media (max-width: 503px) {
   header {
     min-width: 308px;
+    position: relative;
+    top: auto;
   }
 }
 header .volunteerTab {
@@ -629,6 +656,14 @@ footer {
   footer {
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom: auto;
+  }
+}
+@media (max-width: 503px) {
+  footer {
+    position: relative;
+    bottom: auto;
   }
 }
 footer .p1 {
