@@ -350,7 +350,7 @@ body {
   min-width: 483px;
   min-height: 316px;
   width: 45%;
-  height: 45%;
+  height: auto;
   margin: auto auto auto auto;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
@@ -367,7 +367,6 @@ body {
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
-  background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   margin: auto auto;
   height: 25%;
@@ -408,12 +407,8 @@ body {
   display: none;
 }
 .tabs-item-selected {
-  background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   display: flex;
-}
-.close {
-  display: none;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
@@ -432,35 +427,61 @@ body {
   border-top: 15px double black;
   padding: 5%;
   margin-top: 10%;
+  margin-right: 2%;
+}
+@media (max-width: 503px) {
+  .content-header {
+    font-size: 1.1rem;
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .content-header {
+    width: 60%;
+  }
 }
 .main-content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   align-items: center;
   width: 100%;
+  padding: 5%;
 }
 .salesContent {
   display: flex;
-  margin: 18% 18% 18% 18%;
+  margin: 12% 12% 12% 12%;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 5%;
 }
 .donattionForm {
   display: flex;
-  width: 30%;
+  align-content: center;
+  width: 55%;
   min-width: 182px;
-  max-height: 387px;
-  height: 40%;
+  max-height: 486px;
+  height: auto;
   margin-top: 15%;
   font-size: 1.4rem;
   margin: auto auto;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
-  padding: 5%;
+  padding: 15%;
+}
+@media (max-width: 503px) {
+  .donattionForm {
+    padding: 2%;
+    width: 95%;
+  }
+}
+@media (max-width: 800px) {
+  .donattionForm {
+    width: 80%;
+  }
 }
 .missionStatement {
   min-width: 180px;
@@ -469,7 +490,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     padding: 0;
-    img {
+    img 
         width: 115%;
         height: 150%;
         margin: auto auto;
@@ -502,6 +523,11 @@ body {
 }
 .content-form form input {
   width: 90%;
+}
+@media (max-width: 503px) {
+  .content-form {
+    font-size: 1.1rem;
+  }
 }
 header {
   position: fixed;
@@ -639,6 +665,7 @@ footer .p2 {
   min-width: 308px;
   margin: auto 10%;
 }
-.activTabFooter {
+.activeHeaderFooter {
   background-color: aquamarine;
+  position: relative;
 }
