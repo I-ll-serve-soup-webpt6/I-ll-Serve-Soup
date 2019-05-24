@@ -369,7 +369,7 @@ body {
   flex-flow: row nowrap;
   border-radius: 10px;
   margin: auto auto;
-  height: 50%;
+  height: 25%;
 }
 @media (max-width: 503px) {
   .mainNav nav {
@@ -409,9 +409,11 @@ body {
 .tabs-item-selected {
   border-radius: 10px;
   display: flex;
+
 }
 .activTabMainNav {
   background-color: aquamarine;
+
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
