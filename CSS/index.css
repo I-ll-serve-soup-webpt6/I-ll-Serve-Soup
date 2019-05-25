@@ -341,7 +341,6 @@ h5 {
   margin-top: 4%;
 }
 .headerLogo {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
 }
@@ -355,7 +354,6 @@ h5 {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
-  border: 1px solid red;
 }
 @media (max-width: 503px) {
   .mainNav {
@@ -371,7 +369,6 @@ h5 {
   border-radius: 10px;
   margin: 30% auto 0% auto;
   width: 100%;
-  border: 1px solid red;
   height: 35%;
 }
 @media (max-width: 503px) {
@@ -404,9 +401,11 @@ h5 {
 }
 .xBtn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   font-weight: bolder;
-  border: 1px solid red;
+  background: black;
+  color: white;
+  width: 40px;
 }
 .tabs-item {
   display: none;
@@ -480,7 +479,7 @@ h5 {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
-  padding: 15%;
+  padding: 5%;
 }
 @media (max-width: 503px) {
   .donattionForm {
