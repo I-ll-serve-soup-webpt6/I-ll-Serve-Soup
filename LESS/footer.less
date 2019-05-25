@@ -1,8 +1,7 @@
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    // position: fixed;
+    // left: 0;
+    // bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,19 +10,19 @@ footer {
     height: 60px;
     width: 100%;
     padding: 0;
-    margin: 0;
+
     @media(max-width:@tablet){
-        // display: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         // border: 1px solid red;
-        position: relative;
-        bottom: auto;
+        // position: relative;
+        // bottom: auto;
     }
-    @media(max-width:@phone){
-        position: relative;
-        bottom: auto;
-    }
+    // @media(max-width:@phone){
+        // position: relative;
+        // bottom: auto;
+    // }
     .p1 {
         //  border: 1px solid red;
         margin: auto 10%;
@@ -37,7 +36,7 @@ footer {
 }
 .activeHeaderFooter {
     background-color: @footerBkgrdColor;
-    position: relative;
-    bottom: auto;
+    // position: relative;
+    // bottom: auto;
 }
 //I had to un-nest the paragraph mixins to accomodate the p1 min-width;
