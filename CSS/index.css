@@ -404,6 +404,7 @@ h5 {
 }
 .xBtn {
   display: flex;
+  align-content: flex-end;
   justify-content: center;
   font-weight: bolder;
   background: black;
@@ -471,9 +472,145 @@ h5 {
   background: rgba(208, 216, 217, 0.6);
   min-width: 241px;
 }
+@media (max-width: 800px) {
+  .tabs-item[data-tab="about"] .xBtn {
+    margin-left: 162%;
+    margin-right: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .tabs-item[data-tab="about"] .xBtn {
+    margin-left: 105%;
+    margin-right: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .tabs-item[data-tab="about"] {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 800px) {
+  .tabs-item[data-tab="about"] {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.tabs-item[data-tab="marketing"] {
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+  background: rgba(208, 216, 217, 0.6);
+  margin: 1% auto 1% auto;
+  padding: 2% 2% 3% 3%;
+}
+.tabs-item[data-tab="marketing"] h2 {
+  background: black;
+  color: white;
+}
+@media (max-width: 800px) {
+  .tabs-item[data-tab="marketing"] {
+    padding: 1% 30%;
+  }
+}
+@media (max-width: 503px) {
+  .tabs-item[data-tab="marketing"] {
+    padding: 1% 15%;
+  }
+}
 [data-developerImg="andrew"] {
   width: 40%;
   margin: 1% auto 1% auto;
+}
+.tabs-item[data-tab="sales"] .headerBtn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: auto auto;
+  min-width: 100px;
+  min-height: 35px;
+  color: white;
+  height: 35px;
+  width: 140px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #6cb043;
+  min-width: 140px;
+  background: #6cb043;
+}
+@media (max-width: 800px) {
+  .tabs-item[data-tab="sales"] .headerBtn {
+    order: 2;
+    margin: 0.4% auto;
+  }
+}
+.tabs-item[data-tab="sales"] .xBtn {
+  margin-left: 90%;
+}
+.tabs-item[data-tab="marketing"] {
+  border: 1px solid black;
+}
+.tabs-item[data-tab="marketing"] img {
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.tabs-item[data-tab="marketing"] .headerBtn {
+  min-width: 100px;
+  min-height: 35px;
+  color: white;
+  height: 35px;
+  width: 140px;
+  background: white;
+  border-radius: 5px;
+  margin: auto auto;
+  border: 1px solid #6cb043;
+  min-width: 140px;
+  background: #6cb043;
+}
+@media (max-width: 800px) {
+  .tabs-item[data-tab="marketing"] .headerBtn {
+    order: 2;
+    margin: 0.4% auto;
+  }
+}
+.tabs-item[data-tab="marketing"] .xBtn {
+  margin-left: 98%;
+  margin-right: 3%;
+}
+@media (max-width: 800px) {
+  .tabs-item[data-tab="marketing"] .xBtn {
+    margin-left: 162%;
+    margin-right: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .tabs-item[data-tab="marketing"] .xBtn {
+    margin-left: 105%;
+    margin-right: 3%;
+  }
+}
+.tabs-item[data-tab="contact"] {
+  background: rgba(208, 216, 217, 0.6);
+  border: 1px solid black;
+}
+.tabs-item[data-tab="contact"] h2 {
+  font-weight: bold;
+}
+.tabs-item[data-tab="contact"] .xBtn {
+  margin-left: 111%;
+  margin-right: 3%;
+}
+@media (max-width: 800px) {
+  .tabs-item[data-tab="contact"] .xBtn {
+    margin-left: 90%;
+    margin-right: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .tabs-item[data-tab="contact"] .xBtn {
+    margin-left: 90%;
+    margin-right: 3%;
+  }
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");

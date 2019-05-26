@@ -61,6 +61,13 @@ singIn.addEventListener('click', (element) => {
   console.log("sign in button was clicked")
   window.location.href = "https://projects.invisionapp.com/share/Z6RLWHYRC2K#/screens";
 });
+
+const salesPage = document.querySelector('.headerBtn');
+salesPage.addEventListener('click', (element) => {
+  console.log("sign in button was clicked")
+  window.location.href = "./salespage.html";
+});
+
 /*
 let header = document.querySelector('header');
 let footer = document.querySelector('footer');
