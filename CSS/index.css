@@ -161,7 +161,6 @@ this part targets any button tag within the destination class
 .destination button {
     .btn(white, @button-bg);
 }
-
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -354,7 +353,7 @@ body {
   justify-items: space-between;
   min-width: 483px;
   min-height: 316px;
-  width: 500px;
+  width: 60%;
   height: auto;
   margin: auto auto auto auto;
   background: rgba(208, 216, 217, 0.4);
@@ -415,6 +414,11 @@ body {
 .tabs-item-selected {
   border-radius: 10px;
   display: flex;
+}
+.tabs-item-selected .salesCardImg {
+  display: flex;
+  width: 100%;
+  height: auto;
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
