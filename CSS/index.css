@@ -308,15 +308,12 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-head {
-  height: 100%;
-}
-body {
-  height: 100%;
-}
+/*head {
+    height: 100%;
+}*/
 .container {
   display: flex;
-  height: 100%;
+  min-height: 580px;
   padding: 0;
   margin: 0;
 }
@@ -340,12 +337,13 @@ body {
   height: 45%;
   min-width: 110px;
   min-height: 110px;
+  max-height: 200px;
+  max-width: 200px;
   margin-top: 4%;
 }
 .headerLogo {
   display: flex;
   justify-content: center;
-  height: 50%;
 }
 .mainNav {
   display: flex;
@@ -353,8 +351,6 @@ body {
   justify-items: space-between;
   min-width: 483px;
   min-height: 316px;
-  width: 60%;
-  height: auto;
   margin: auto auto auto auto;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
@@ -365,14 +361,14 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 308px;
-    width: 483px;
+    width: 85%;
   }
 }
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
   border-radius: 10px;
-  margin: 10% auto 0% auto;
+  margin: 30% auto 0% auto;
   width: 100%;
   height: 35%;
 }
@@ -406,7 +402,11 @@ body {
 }
 .xBtn {
   display: flex;
-  border: 1px solid red;
+  justify-content: center;
+  font-weight: bolder;
+  background: black;
+  color: white;
+  width: 40px;
 }
 .tabs-item {
   display: none;
@@ -416,9 +416,14 @@ body {
   display: flex;
 }
 .tabs-item-selected .salesCardImg {
-  display: flex;
   width: 100%;
   height: auto;
+}
+@media (max-width: 800px) {
+  .tabs-item-selected {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
@@ -458,14 +463,13 @@ body {
   align-content: center;
   align-items: center;
   width: 100%;
-  padding: 5%;
 }
 .salesContent {
   display: flex;
-  margin: 12% 12% 12% 12%;
+  margin: 3% 12% 12% 12%;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 5%;
+  padding: 1%;
 }
 .donattionForm {
   display: flex;
@@ -480,7 +484,7 @@ body {
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
-  padding: 15%;
+  padding: 5%;
 }
 @media (max-width: 503px) {
   .donattionForm {
@@ -540,8 +544,6 @@ body {
   }
 }
 header {
-  position: fixed;
-  top: 0;
   background-color: white;
   height: 60px;
   width: 100%;
@@ -555,22 +557,18 @@ header {
 }
 @media (max-width: 800px) {
   header {
-    position: relative;
-    top: auto;
     display: flex;
-    height: 5%;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 162px;
-    margin-bottom: 10%;
+    padding-top: 2%;
+    height: auto;
+    min-height: 125px;
   }
 }
 @media (max-width: 503px) {
   header {
     min-width: 308px;
-    position: relative;
-    top: auto;
   }
 }
 header .volunteerTab {
@@ -639,7 +637,6 @@ header .headerBtn {
   header .headerBtn {
     order: 2;
     margin: 0.4% auto;
-    margin-bottom: 3%;
   }
 }
 header .headerBtnsales {
@@ -653,9 +650,6 @@ header .headerBtnsales {
   visibility: hidden;
 }
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -663,20 +657,12 @@ footer {
   height: 60px;
   width: 100%;
   padding: 0;
-  margin: 0;
 }
 @media (max-width: 800px) {
   footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    bottom: auto;
-  }
-}
-@media (max-width: 503px) {
-  footer {
-    position: relative;
-    bottom: auto;
   }
 }
 footer .p1 {
@@ -689,6 +675,4 @@ footer .p2 {
 }
 .activeHeaderFooter {
   background-color: #D5F1F3;
-  position: relative;
-  bottom: auto;
 }
