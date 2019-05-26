@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5 {
 .active-tab {
     background-color: @mainNavBackground;
 }
-.xBtn{
+.tabs-item-selected .xBtn{
     display: flex;
     align-content: flex-end;
     justify-content: center;
@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5 {
         margin:  1% auto 1% auto;
     }
 };
-.tabs-item[data-tab="about"]{
+.tabs-item-selected[data-tab="about"]{
     justify-content: space-evenly;
     align-content: center;
     width: 100%;
@@ -259,10 +259,9 @@ h1, h2, h3, h4, h5 {
     @media(max-width:@tablet){
         display: flex;
         flex-direction: column-reverse;
-    }
-          
+    }   
 }
-.tabs-item[data-tab="marketing"]{
+.tabs-item-selected[data-tab="marketing"]{
     justify-content: space-evenly;
     align-content: center;
     width: 100%;
@@ -282,13 +281,13 @@ h1, h2, h3, h4, h5 {
         padding: 1% 15%;
     }
 }
-[data-developerImg ="andrew"]{
-    width: 40%;
-    margin: 1% auto 1% auto;
-    // border:1px solid red;
+// [data-developerImg ="andrew"]{
+//     width: 40%;
+//     margin: 1% auto 1% auto;
+//     // border:1px solid red;
 
-}
-.tabs-item[data-tab = "sales"] {
+// }
+.tabs-item-selected[data-tab = "sales"] {
 
     .headerBtn{
         display: flex;
@@ -316,7 +315,7 @@ h1, h2, h3, h4, h5 {
     }
 
 }
-.tabs-item[data-tab = "marketing"] {
+.tabs-item-selected[data-tab = "marketing"] {
     border: 1px solid black;
     img {
         border-radius: 10px;
@@ -354,7 +353,7 @@ h1, h2, h3, h4, h5 {
         }
     }
 }
-.tabs-item[data-tab="contact"]{
+.tabs-item-selected[data-tab="contact"]{
     background: rgba(208, 216, 217, 0.6);
     border: 1px solid black;
     h2 {
