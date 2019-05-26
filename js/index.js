@@ -22,7 +22,7 @@ class TabItem {
   select() {
     const items = document.querySelectorAll('.tabs-item').forEach(item => item.classList.remove('tabs-item-selected'));
     this.element.classList.add('tabs-item-selected');
-    selectedTab (this.element);
+    // selectedTab (this.element);
   }
 }
 
@@ -38,8 +38,8 @@ class XButton {
   closeItem(){
     document.querySelectorAll(`.tabs-item`).forEach(item => item.classList.remove('tabs-item-selected'));
     //Return the sticky property to header and footer
-    footer.classList.remove('activeHeaderFooter');
-    header.classList.remove('activeHeaderFooter');
+    // footer.classList.remove('activeHeaderFooter');
+    // header.classList.remove('activeHeaderFooter');
   }
 }
 
