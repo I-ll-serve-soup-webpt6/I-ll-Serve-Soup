@@ -309,17 +309,19 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-head {
-  height: 100%;
-}
-body {
-  height: 100%;
-}
+/*head {
+    height: 100%;
+}*/
 .container {
   display: flex;
-  height: 100%;
+  min-height: 580px;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 503px) {
+  .container {
+    min-width: 308px;
+  }
 }
 #marketingBackground {
   background-image: url("../assets/background.jpeg");
@@ -332,25 +334,52 @@ body {
   background-size: cover;
 }
 .container img {
-  width: 20%;
-  height: 20%;
-  margin: 2% 55% 15% 40%;
+  width: 22%;
+  height: 45%;
+  min-width: 110px;
+  min-height: 110px;
+  margin-top: 4%;
+}
+.headerLogo {
+  display: flex;
+  justify-content: center;
 }
 .mainNav {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
   min-width: 483px;
-  width: 45%;
-  height: 50%;
-  margin: auto auto;
+  min-height: 316px;
+  margin: auto auto auto auto;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
 }
+@media (max-width: 503px) {
+  .mainNav {
+    display: flex;
+    flex-direction: column;
+    min-width: 308px;
+    width: 85%;
+  }
+}
 .mainNav nav {
   display: flex;
   flex-flow: row nowrap;
-  margin: 12% auto 0% auto;
+  border-radius: 10px;
+  margin: 30% auto 0% auto;
+  width: 100%;
+  height: 35%;
+}
+@media (max-width: 503px) {
+  .mainNav nav {
+    display: flex;
+    flex-direction: column;
+    min-width: 308px;
+  }
 }
 .mainNav nav .tab {
+  margin: auto auto 0% auto;
   display: flex;
   padding-top: 2%;
   width: 25%;
@@ -361,16 +390,35 @@ body {
   background: black;
   color: white;
 }
+@media (max-width: 503px) {
+  .mainNav nav .tab {
+    width: 100%;
+    min-width: 308px;
+  }
+}
 .active-tab {
   background-color: rgba(208, 216, 217, 0.4);
+}
+.xBtn {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  background: black;
+  color: white;
+  width: 40px;
 }
 .tabs-item {
   display: none;
 }
 .tabs-item-selected {
-  background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
-  display: block;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .tabs-item-selected {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #salesBackground {
   background-image: url("../assets/salesbackground.jpeg");
@@ -379,43 +427,84 @@ body {
 }
 .content-header {
   text-align: center;
-  font-size: 140%;
+  font-size: 1.4rem;
+  height: 45%;
+  width: 40%;
   margin-bottom: 6%;
   font-weight: bold;
+  background: rgba(208, 216, 217, 0.4);
+  border-radius: 10px;
+  border-top: 15px double black;
+  padding: 5%;
+  margin-top: 10%;
+  margin-right: 2%;
+}
+@media (max-width: 503px) {
+  .content-header {
+    font-size: 1.1rem;
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .content-header {
+    width: 60%;
+  }
 }
 .main-content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   align-items: center;
   width: 100%;
 }
 .salesContent {
   display: flex;
-  margin-left: 18%;
+  margin: 3% 12% 12% 12%;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 1%;
 }
 .donattionForm {
-  width: 150%;
-  height: 140%;
+  display: flex;
+  align-content: center;
+  width: 55%;
+  min-width: 182px;
+  max-height: 486px;
+  height: auto;
+  margin-top: 15%;
+  font-size: 1.4rem;
   margin: auto auto;
   background: rgba(208, 216, 217, 0.4);
   border-radius: 10px;
   border-top: 15px double black;
+  padding: 5%;
 }
-.productFeature {
-  margin-left: 10%;
-  padding: 0;
+@media (max-width: 503px) {
+  .donattionForm {
+    padding: 2%;
+    width: 95%;
+  }
 }
-.productFeature img {
-  width: 95%;
-  height: 130%;
-  margin: auto auto;
-  border-radius: 2%;
+@media (max-width: 800px) {
+  .donattionForm {
+    width: 80%;
+  }
 }
+.missionStatement {
+  min-width: 180px;
+}
+/*.productFeature {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    img 
+        width: 115%;
+        height: 150%;
+        margin: auto auto;
+        border-radius: 10px;
+    }*/
 .content-form {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
@@ -435,7 +524,7 @@ body {
   border: 0;
   color: white;
   padding: 2% 5% 2% 5%;
-  border-radius: 15%;
+  border-radius: 10px;
   margin-bottom: 5%;
 }
 .content-form form {
@@ -444,38 +533,70 @@ body {
 .content-form form input {
   width: 90%;
 }
+@media (max-width: 503px) {
+  .content-form {
+    font-size: 1.1rem;
+  }
+}
 header {
-  position: fixed;
-  top: 0;
   background-color: white;
   height: 60px;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-evenly;
   font-family: "sans-serif";
   margin: 0;
   padding: 0;
 }
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    height: auto;
+    min-height: 125px;
+  }
+}
+@media (max-width: 503px) {
+  header {
+    min-width: 308px;
+  }
+}
 header .volunteerTab {
   min-width: 100px;
   height: 20px;
-  width: 300px;
+  width: 194px;
   color: #9ca4ab;
   font-weight: bold;
   margin: auto 10% auto 10%;
   min-width: 194px;
 }
+@media (max-width: 800px) {
+  header .volunteerTab {
+    order: 2;
+    margin: auto auto;
+  }
+}
 header h1 {
   min-width: 258px;
   height: 30px;
-  width: 300px;
+  width: 258px;
   justify-content: center;
   font-size: 2rem;
   margin: auto 0px auto;
   padding: 0;
   color: #6cb043;
   font-weight: bold;
+}
+@media (max-width: 800px) {
+  header h1 {
+    order: 1;
+    margin: 1% auto;
+  }
 }
 header .signInTab {
   color: #9ca4ab;
@@ -485,12 +606,19 @@ header .signInTab {
   padding: auto auto;
   min-width: 60px;
 }
+@media (max-width: 800px) {
+  header .signInTab {
+    order: 2;
+    margin: 1% auto;
+  }
+}
 header .signInTab a {
   text-decoration: none;
   color: #9ca4ab;
 }
 header .headerBtn {
   min-width: 100px;
+  min-height: 35px;
   color: #6cb043;
   height: 35px;
   width: 140px;
@@ -498,6 +626,13 @@ header .headerBtn {
   border-radius: 5px;
   margin: auto 10% auto 0px;
   border: 1px solid #6cb043;
+  min-width: 140px;
+}
+@media (max-width: 800px) {
+  header .headerBtn {
+    order: 2;
+    margin: 0.4% auto;
+  }
 }
 header .headerBtnsales {
   color: #6cb043;
@@ -510,9 +645,6 @@ header .headerBtnsales {
   visibility: hidden;
 }
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -520,7 +652,13 @@ footer {
   height: 60px;
   width: 100%;
   padding: 0;
-  margin: 0;
+}
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 footer .p1 {
   margin: auto 10%;
@@ -529,4 +667,7 @@ footer .p1 {
 footer .p2 {
   min-width: 308px;
   margin: auto 10%;
+}
+.activeHeaderFooter {
+  background-color: #D5F1F3;
 }
